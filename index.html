@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,800;0,900;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>IZI | Оператор развлечений</title>
+
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <img src="img/logo.svg" alt="Izi logo" class="nav__logo" id="logo" designer="Izi" />
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="#about">О нас</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#price">Пакеты</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#testimonials">Отзывы</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--btn btn--open-modal" href="#">Оставить заявку</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__title">
+
+      <h1>
+        Оператор
+        <!-- blue highlight effect -->
+        <span class="highlight">развлечений</span>
+        <br />
+        IZI
+      </h1>
+      <h4>Смотри, слушай, играй и получай бонусы.
+      </h4>
+      <button class="btn--text btn--scroll-to">Узнать больше &DownArrow;</button>
+      <img src="./img/hero_sm.png" class="header__img" alt="Mobile Operator IZI" />
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <div class="section__title">
+      <h2 class="section__description">О нас</h2>
+      <h3 class="section__header">
+        Все что вам нужно от мобильного оператора.
+      </h3>
+    </div>
+
+    <div class="features">
+      <img src="./img/game.jpg" alt="Game" class="features__img " />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="./img/icons.svg#icon-monitor"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Игры</h5>
+        <p>
+          Развлекайся, залипай, побеждай – бесплатно и без рекламы.
+        </p>
+      </div>
+
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="./img/icons.svg#icon-film"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Кино</h5>
+        <p>
+          Смотри лучшие фильмы прямо в приложении IZI
+        </p>
+      </div>
+      <img src="./img/movie.jpg" alt="Movie" class="features__img" />
+
+      <img src="./img/radio.jpg" alt="Radio listening" class="features__img" />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="./img/icons.svg#icon-radio"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Радио</h5>
+        <p>
+          Настройся на IZI вайб. Слушай радио 24/7
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="price">
+    <div class="section__title">
+      <h2 class="section__description">Твои IZI пакеты</h2>
+      <h3 class="section__header">
+        Очень быстрый интернет, можно делать что угодно.
+      </h3>
+    </div>
+
+    <div class="operations">
+      <div class="operations__tab-container">
+        <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+          <span>01</span>12ГБ
+        </button>
+        <button class="btn operations__tab operations__tab--2" data-tab="2">
+          <span>02</span>25ГБ
+        </button>
+        <button class="btn operations__tab operations__tab--3" data-tab="3">
+          <span>03</span>32ГБ
+        </button>
+      </div>
+      <div class="operations__content operations__content--1 operations__content--active">
+        <div class="operations__icon operations__icon--1">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-upload"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Выбирай только то, что нужно тебе: пакеты гигабайтов, минут и SMS
+        </h5>
+        <p>
+          Стоимость: 2890 тг/мес. Звонки: 0 мин.
+          Остатки гигабайтов, минут и SMS обнуляются, если Абонент не использует номер больше 6 месяцев: не включает
+          интернет, не звонит, не отправляет SMS, а баланс не пополняется и не тратится
+        </p>
+      </div>
+
+      <div class="operations__content operations__content--2">
+        <div class="operations__icon operations__icon--2">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-home"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Без абонплаты и срока действия — гигабайты и минуты не сгорят
+        </h5>
+        <p>
+          Стоимость: 3490 тг/мес. Звонки: 100 мин.
+          Остатки гигабайтов, минут и SMS обнуляются, если Абонент не использует номер больше 6 месяцев: не включает
+          интернет, не звонит, не отправляет SMS, а баланс не пополняется и не тратится
+        </p>
+      </div>
+      <div class="operations__content operations__content--3">
+        <div class="operations__icon operations__icon--3">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-user-x"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Не трать интернет, пока смотришь, слушаешь и играешь в приложении IZI
+        </h5>
+        <p>
+          Стоимость: 3990 тг/мес. Звонки: 200 мин. Остатки гигабайтов, минут и SMS обнуляются, если Абонент не
+          использует номер больше 6 месяцев: не включает
+          интернет, не звонит, не отправляет SMS, а баланс не пополняется и не тратится
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <div class="section__title section__title--testimonials">
+      <h2 class="section__description">Не уверены?</h2>
+      <h3 class="section__header">
+        Впечатления клиентов о нашем сервисе.
+      </h3>
+    </div>
+
+    <div class="slider">
+      <div class="slide">
+        <div class="testimonial">
+          <h5 class="testimonial__header">Превосходный опыт обслуживания!</h5>
+          <blockquote class="testimonial__text">
+            Благодаря этому мобильному оператору я всегда на связи, даже в отдаленных районах. Отличное покрытие и
+            стабильная связь. Рекомендую всем!
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="./img/person-1.jpg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Елена Петрова</h6>
+            <p class="testimonial__location">Астана, Казахстан</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <h5 class="testimonial__header">
+            Превосходное обслуживание клиентов!
+          </h5>
+          <blockquote class="testimonial__text">
+            Получил отличную поддержку от службы поддержки клиентов. Все мои вопросы были оперативно решены. Спасибо за
+            отличное обслуживание!
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="./img/person-2.jpg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Аскар Оспанов</h6>
+            <p class="testimonial__location">Караганды, Казахстан</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <h5 class="testimonial__header">
+            Отличное покрытие и связь!
+          </h5>
+          <blockquote class="testimonial__text">
+            Благодаря этому мобильному оператору я всегда на связи, даже в отдаленных районах. Отличное покрытие и
+            стабильная связь. Рекомендую всем!
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="./img/person-3.jpg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Алия Жангельды</h6>
+            <p class="testimonial__location">Алматы, Казахстан</p>
+          </address>
+        </div>
+      </div>
+
+      <button class="slider__btn slider__btn--left">&larr;</button>
+      <button class="slider__btn slider__btn--right">&rarr;</button>
+      <div class="dots"></div>
+    </div>
+  </section>
+
+  <section class="section section--sign-up">
+    <div class="section__title">
+      <h3 class="section__header">
+        Вы еще не с нами?
+      </h3>
+    </div>
+    <button class="btn btn--open-modal">Оставь заявку на подключение</button>
+  </section>
+
+  <footer class="footer">
+    <ul class="footer__nav">
+      <li class="footer__item">
+        <a class="footer__link" href="#">О нас</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Цены</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Мобильная связь</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Помощь</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Карьера</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Новости</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Связаться с нами</a>
+      </li>
+    </ul>
+    <img src="./img/icon.png" alt="Logo" class="footer__logo" />
+    <p class="footer__copyright">
+      &copy; Все права защищены.
+    </p>
+
+
+  </footer>
+
+  <div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header">
+      Закажи sim-карту <br />
+      всего <span class="highlight">за 1 минуту</span>
+    </h2>
+    <form class="modal__form">
+      <label>Фамилия</label>
+      <input type="text" />
+      <label>Имя</label>
+      <input type="text" />
+      <label>Email</label>
+      <input type="email" />
+      <button class="btn">Отправить &rarr;</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
